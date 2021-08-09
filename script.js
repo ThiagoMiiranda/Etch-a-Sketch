@@ -12,3 +12,17 @@ for (let i = 0; i < totalOfPixels; i++) {
     /*pixel.style.border = 'solid red';*/
     container.appendChild(pixel);
 }
+
+const pixels = document.querySelectorAll('.container div');
+pixels.forEach((pixel) => {
+    pixel.addEventListener('mouseover', (e) => {
+        e.target.style.backgroundColor = 'black';
+    });
+});
+
+const clearBtn = document.querySelector('#clear-btn');
+clearBtn.addEventListener('click', () => {
+    pixels.forEach((pixel) => {
+        pixel.style.backgroundColor = '';
+    });
+});
