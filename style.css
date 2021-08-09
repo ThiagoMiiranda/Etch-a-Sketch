@@ -1,0 +1,19 @@
+.major-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(32, auto);
+    grid-template-rows: repeat(32, auto);
+    
+    width: 512px;
+    height: 512px;
+    border: solid blue;
+}
