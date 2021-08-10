@@ -16,7 +16,8 @@ for (let i = 0; i < totalOfPixels; i++) {
 const pixels = document.querySelectorAll('.container div');
 pixels.forEach((pixel) => {
     pixel.addEventListener('mouseover', (e) => {
-        e.target.style.backgroundColor = 'black';
+        let color = document.querySelector('#colorPicker').value;
+        e.target.style.backgroundColor = color;
     });
 });
 
