@@ -10,10 +10,12 @@
 
 .container {
     display: grid;
-    grid-template-columns: repeat(32, auto);
-    grid-template-rows: repeat(32, auto);
     
     width: 512px;
     height: 512px;
     border: solid blue;
+}
+
+.container div {
+    border: 1px rgba(68, 63, 63, 0.116) solid;
 }
