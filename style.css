@@ -1,11 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Open+Sans&display=swap');
+
+body {
+    background: linear-gradient(132deg, rgb(65, 80, 95) 43.66%, rgb(36, 37, 38) 100.00%);
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 25px;
+}
+
 .major-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     
     width: 100%;
     height: 100vh;
+}
+
+h1 {
+    font-size: 90px;
+}
+
+p {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+
+    /*border: purple solid;*/
+    width: 750px;
+}
+
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+    height: 512px;
+    background-color: rgba(168, 168, 168, 0.329);
+    border-radius: 15px;
+    box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.slide-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.push-button-3d {
+    box-shadow: 0 4px #c1a23c; /*Cor da sombra do botão*/
+    color: #5e4800; /* Cor da letra */
+    background-color: #ffd95e; /* Cor do botão */
+    text-transform: uppercase; /*Deixa maiúsculo*/
+    padding: 10px 20px; /*Aumenta o botão*/
+    border-radius: 5px;
+    transition: all .2s ease;
+    font-weight: 900;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.push-button-3d:active {
+    box-shadow: 0 1px #c1a23c;
+    transform: translateY(3px);
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 140px;
+    height: 38px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    box-shadow: 0 6px #c1a23c;
+    background-color: #ffd95e;
+    border-radius: 5px;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.slider p {
+    margin-top: 14px;
+    color: #584400;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 13.33px;
+}
+
+input:checked + .slider {
+    box-shadow: 0 1px #c1a23c;
+    transform: translateY(5px);
 }
 
 .container {
@@ -13,9 +112,24 @@
     
     width: 512px;
     height: 512px;
-    border: solid blue;
+    /*border: solid blue;*/
+    background-color: white;
+    box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.5);
 }
 
 .container div {
     border: 1px rgba(68, 63, 63, 0.116) solid;
+}
+
+p img {
+    margin-right: 5px;
+    height: 25px;
+}
+
+a {
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
 }

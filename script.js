@@ -14,7 +14,7 @@ function deleteTable() {
 
 function userInput(event) {
     let output = document.querySelector('output');
-    output.textContent = event.target.value;
+    output.textContent = event.target.value + ' x ' + event.target.value;
 
     deleteTable();
 
