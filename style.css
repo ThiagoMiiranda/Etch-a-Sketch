@@ -56,7 +56,7 @@ main {
     background-color: #ffd95e; /* Cor do botão */
     text-transform: uppercase; /*Deixa maiúsculo*/
     padding: 10px 20px; /*Aumenta o botão*/
-    border-radius: 5px;
+    border-radius: 15px;
     transition: all .2s ease;
     font-weight: 900;
     cursor: pointer;
@@ -88,7 +88,7 @@ main {
     
     box-shadow: 0 6px #c1a23c;
     background-color: #ffd95e;
-    border-radius: 5px;
+    border-radius: 15px;
     transition: all .2s ease;
     cursor: pointer;
 }
