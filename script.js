@@ -80,13 +80,6 @@ function createPixelEvent() {
     });
 }
 
-function removePixelEvents() {
-    let pixels = document.querySelectorAll('.container div');
-    pixels.forEach((pixel) => {
-        pixel.removeEventListener('mouseover', paint);
-    });
-}
-
 const TABLESIZE = 512;
 const container = document.querySelector('.container');
 let paintMode = 'color';
@@ -109,6 +102,7 @@ checkboxes.forEach((checkbox) => {
             paintMode = e.target.value;
             createPixelEvent();
 
+            //Uncheck the other checkboxes if any is pressed down
             checkboxes.forEach((toolsBtn) => {
                 if (checkbox.value != toolsBtn.value) {
                     toolsBtn.checked = false;

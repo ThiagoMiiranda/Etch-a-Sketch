@@ -28,7 +28,6 @@ main {
     display: flex;
     justify-content: space-between;
 
-    /*border: purple solid;*/
     width: 750px;
 }
 
@@ -51,11 +50,11 @@ main {
 }
 
 .push-button-3d {
-    box-shadow: 0 4px #333f4b; /*Cor da sombra do botão*/
-    color: black; /* Cor da letra */
-    background-color: #41505f; /* Cor do botão */
-    text-transform: uppercase; /*Deixa maiúsculo*/
-    padding: 10px 20px; /*Aumenta o botão*/
+    box-shadow: 0 4px #333f4b;
+    color: black;
+    background-color: #41505f;
+    text-transform: uppercase;
+    padding: 10px 20px;
     border-radius: 15px;
     transition: all .2s ease;
     font-weight: 900;
@@ -86,8 +85,8 @@ main {
     right: 0;
     bottom: 0;
     
-    box-shadow: 0 6px #333f4b; /* #c1a23c */
-    background-color: #41505f; /* #ffd95e */
+    box-shadow: 0 6px #333f4b;
+    background-color: #41505f;
     border-radius: 15px;
     transition: all .2s ease;
     cursor: pointer;
@@ -112,7 +111,6 @@ input:checked + .slider {
     
     width: 512px;
     height: 512px;
-    /*border: solid blue;*/
     background-color: white;
     box-shadow: 5px 4px 5px rgba(0, 0, 0, 0.5);
 }
