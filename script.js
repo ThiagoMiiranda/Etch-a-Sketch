@@ -67,6 +67,9 @@ function paint(e) {
     } else if (paintMode == 'cold') {
         let color = `hsl(${getRandomIntIncl(180, 250)}, ${getRandomIntIncl(60, 100)}%, 50%)`;
         e.target.style.backgroundColor = color;
+    } else if (paintMode == 'eraser') {
+        let color = '';
+        e.target.style.backgroundColor = color;
     }
 }
 
@@ -118,6 +121,6 @@ checkboxes.forEach((checkbox) => {
 });
 
 //Basic setup for page load
-container.style.gridTemplateColumns = `repeat(16, 32px)`;
-createTable(16*16);
+container.style.gridTemplateColumns = `repeat(32, 16px)`;
+createTable(32*32);
 createPixelEvent();
